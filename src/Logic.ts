@@ -5,7 +5,7 @@ export function getStateMachine(prizeIndex: number) {
 			if (typeof firstSelected === "undefined") {
 				firstSelected = selected;
 			}
-			const showDoor = getRandomInt(2);
+			// const showDoor = getRandomInt(2);
 			return [
 				{
 					isPrize: prizeIndex === 0,
@@ -50,9 +50,9 @@ type DoorState = {
 	selected: boolean;
 	shown: boolean;
 };
-function getRandomInt(max: number) {
-	return Math.floor(Math.random() * max);
-}
+// function getRandomInt(max: number) {
+// 	return Math.floor(Math.random() * max);
+// }
 
 //**
 // 0 + 0 = 1
